@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ResepMakananRumahan</string>
+    <string name="nama_profil">Hi, Raihan</string>
+    <string name="ucapan_profile">Apa yang ingin kamu
+masak hari ini?</string>
+    <string name="search_input">Mau Cari Apa</string>
+</resources>
