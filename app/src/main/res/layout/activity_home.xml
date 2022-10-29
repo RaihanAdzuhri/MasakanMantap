@@ -4,40 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/latar"
-    android:padding="20dp">
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        app:srcCompat="@drawable/profil"
-        tools:layout_editor_absoluteX="292dp"
-        tools:layout_editor_absoluteY="16dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/nama_profil"
-        android:textColor="#000000"
-        android:textSize="16sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="17dp" />
-
-    <TextView
-        android:id="@+id/id_ucapan_profile"
-        android:layout_width="245dp"
-        android:layout_height="49dp"
-        android:text="@string/ucapan_profile"
-        android:textColor="#000000"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="48dp" />
+    android:background="@drawable/latar2"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
 
     <TextView
         android:id="@+id/id_textview"
@@ -49,31 +18,58 @@
         android:backgroundTint="@color/gray_new"
         android:text="@string/search_input"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintHorizontal_bias="0.059"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="106dp" />
+        tools:layout_editor_absoluteY="88dp" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        app:srcCompat="@drawable/arrow"
-        tools:layout_editor_absoluteX="312dp"
-        tools:layout_editor_absoluteY="106dp"
-        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/id_ucapan_profile"
+        android:layout_width="245dp"
+        android:layout_height="49dp"
+        android:text="@string/ucapan_profile"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <TextView
+        android:id="@+id/id_disarankan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disarankan untuk kamu"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="435dp" />
 
     <TextView
         android:id="@+id/id_judul_kategori"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Kategori Masakan"
+        android:textColor="#000000"
         android:textSize="22sp"
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="154dp" />
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="136dp"
+        />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nama_profil"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="-1dp" />
 
     <LinearLayout
         android:layout_width="120dp"
@@ -82,8 +78,8 @@
         android:gravity="center"
         android:orientation="vertical"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="204dp">
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="174dp">
 
         <ImageView
             android:id="@+id/gambar_sarapan"
@@ -99,6 +95,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Sarapan"
+            android:textColor="#000000"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -111,8 +108,8 @@
         android:gravity="center"
         android:orientation="vertical"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="216dp"
-        tools:layout_editor_absoluteY="204dp">
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="174dp">
 
         <ImageView
             android:id="@+id/gambar_fastfood"
@@ -128,6 +125,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="FastFood"
+            android:textColor="#000000"
             android:textSize="16sp"
             android:textStyle="bold" />
     </LinearLayout>
@@ -139,8 +137,8 @@
         android:gravity="center"
         android:orientation="vertical"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="344dp">
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="298dp">
 
         <ImageView
             android:id="@+id/gambar_kue"
@@ -156,6 +154,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Kue"
+            android:textColor="#000000"
             android:textSize="16sp"
             android:textStyle="bold" />
     </LinearLayout>
@@ -167,8 +166,8 @@
         android:gravity="center"
         android:orientation="vertical"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="216dp"
-        tools:layout_editor_absoluteY="344dp">
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="298dp">
 
         <ImageView
             android:id="@+id/gambar_minuman"
@@ -184,19 +183,106 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Minuman"
+            android:textColor="#000000"
             android:textSize="16sp"
             android:textStyle="bold" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/id_disarankan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Disarankan untuk kamu"
-        android:textSize="22sp"
-        android:textStyle="bold"
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/profil"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="289dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/arrow"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="309dp"
+        tools:layout_editor_absoluteY="88dp" />
+
+    <LinearLayout
+        android:layout_width="332dp"
+        android:layout_height="102dp"
+        android:background="@drawable/shhape_box_makanan"
+        android:orientation="vertical"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="484dp" />
+        tools:layout_editor_absoluteY="467dp">
+
+        <ImageView
+            android:layout_width="332dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="top"
+            android:src="@drawable/nasigoreng1" />
+
+        <TextView
+            android:id="@+id/text_nasi_goreng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="Nasi Goreng"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="332dp"
+        android:layout_height="102dp"
+        android:background="@drawable/shhape_box_makanan"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="570dp">
+
+        <ImageView
+            android:layout_width="332dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="top"
+            android:src="@drawable/ayamgeprek1" />
+
+        <TextView
+            android:id="@+id/text_ayam_geprek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="Ayam Geprek"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/akun"
+        tools:layout_editor_absoluteX="278dp"
+        tools:layout_editor_absoluteY="685dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/beranda"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="685dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/explore"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="685dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
