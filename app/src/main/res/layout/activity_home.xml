@@ -13,6 +13,7 @@
         android:layout_width="280dp"
         android:layout_height="38dp"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/shape_rectangle"
         android:backgroundTint="@color/gray_new"
@@ -20,96 +21,113 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.059"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="88dp" />
+        app:layout_constraintTop_toBottomOf="@+id/id_ucapan_profile"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/id_ucapan_profile"
-        android:layout_width="245dp"
-        android:layout_height="49dp"
+        android:layout_width="253dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
         android:text="@string/ucapan_profile"
         android:textColor="#000000"
         android:textSize="22sp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="33dp"
-        tools:layout_editor_absoluteY="30dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/id_disarankan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="11dp"
         android:text="Disarankan untuk kamu"
         android:textColor="#000000"
         android:textSize="22sp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="435dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/id_judul_kategori"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="10dp"
         android:text="Kategori Masakan"
         android:textColor="#000000"
         android:textSize="22sp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="13dp"
-        tools:layout_editor_absoluteY="136dp"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_textview"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="5dp"
         android:text="@string/nama_profil"
         android:textColor="#000000"
         android:textSize="16sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="-1dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="120dp"
         android:layout_height="120dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/shhape_box_makanan"
         android:gravity="center"
         android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="174dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_judul_kategori"
+        tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/gambar_sarapan"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_marginBottom="2dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/sarapan" />
+            android:src="@drawable/sarapan"
+            android:foregroundGravity="top"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:onClick="sarapan"/>
 
-        <TextView
-            android:id="@+id/text_sarapan"
-            android:layout_width="wrap_content"
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@drawable/buttonmelengkung"
             android:text="Sarapan"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textColor="@color/black" />
+
+        />
 
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="120dp"
         android:layout_height="120dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="48dp"
         android:background="@drawable/shhape_box_makanan"
         android:gravity="center"
         android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="193dp"
-        tools:layout_editor_absoluteY="174dp">
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/id_textview"
+        tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/gambar_fastfood"
@@ -117,7 +135,8 @@
             android:layout_height="80dp"
             android:layout_marginBottom="2dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/fastfood" />
+            android:src="@drawable/fastfood"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/text_fastfood"
@@ -131,14 +150,17 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="120dp"
         android:layout_height="120dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="4dp"
         android:background="@drawable/shhape_box_makanan"
         android:gravity="center"
         android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="298dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/gambar_kue"
@@ -146,7 +168,7 @@
             android:layout_height="80dp"
             android:layout_marginBottom="2dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/kue" />
+            android:src="@drawable/kue" />
 
         <TextView
             android:id="@+id/text_kue"
@@ -162,12 +184,14 @@
     <LinearLayout
         android:layout_width="120dp"
         android:layout_height="120dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="4dp"
         android:background="@drawable/shhape_box_makanan"
         android:gravity="center"
         android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="193dp"
-        tools:layout_editor_absoluteY="298dp">
+        app:layout_constraintStart_toEndOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/gambar_minuman"
@@ -175,7 +199,7 @@
             android:layout_height="80dp"
             android:layout_marginBottom="2dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/minuman" />
+            android:src="@drawable/minuman" />
 
         <TextView
             android:id="@+id/text_minuman"
@@ -192,28 +216,34 @@
         android:id="@+id/imageView3"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        app:srcCompat="@drawable/profil"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="289dp"
-        tools:layout_editor_absoluteY="-2dp" />
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@+id/id_ucapan_profile"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/profil"
+        tools:ignore="ContentDescription,MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        app:srcCompat="@drawable/arrow"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="309dp"
-        tools:layout_editor_absoluteY="88dp" />
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toEndOf="@+id/id_textview"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        android:src="@drawable/arrow"
+        tools:ignore="ContentDescription,MissingConstraints" />
 
     <LinearLayout
+        android:id="@+id/linearLayout4"
         android:layout_width="332dp"
         android:layout_height="102dp"
+        android:layout_marginStart="13dp"
         android:background="@drawable/shhape_box_makanan"
         android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="467dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_disarankan"
+        tools:ignore="MissingConstraints">
 
         <ImageView
             android:layout_width="332dp"
@@ -226,7 +256,7 @@
             android:id="@+id/text_nasi_goreng"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="7dp"
+            android:layout_marginLeft="12dp"
             android:text="Nasi Goreng"
             android:textColor="#000000"
             android:textSize="16sp"
@@ -234,13 +264,16 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout5"
         android:layout_width="332dp"
         android:layout_height="102dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="2dp"
         android:background="@drawable/shhape_box_makanan"
         android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="570dp">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        tools:ignore="MissingConstraints">
 
         <ImageView
             android:layout_width="332dp"
@@ -253,36 +286,50 @@
             android:id="@+id/text_ayam_geprek"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="7dp"
+            android:layout_marginLeft="12dp"
             android:text="Ayam Geprek"
             android:textColor="#000000"
             android:textSize="16sp"
             android:textStyle="bold" />
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/akun"
-        tools:layout_editor_absoluteX="278dp"
-        tools:layout_editor_absoluteY="685dp" />
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        tools:ignore="MissingConstraints">
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/beranda"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="685dp" />
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/explore"
+            tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/explore"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="685dp" />
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="70dp"
+            android:src="@drawable/beranda"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="70dp"
+            android:src="@drawable/akun"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
